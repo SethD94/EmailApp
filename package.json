@@ -1,0 +1,27 @@
+{
+  "name": "emailapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node" : "8.12.0",
+    "npm" : "6.4.1"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SethD94/EmailApp.git"
+  },
+  "author": "Seth Delpachitra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SethD94/EmailApp/issues"
+  },
+  "homepage": "https://github.com/SethD94/EmailApp#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
