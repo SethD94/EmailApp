@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node" : "8.12.0",
-    "npm" : "6.4.1"
+    "node": "8.12.0",
+    "npm": "6.4.1"
   },
   "scripts": {
     "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +23,9 @@
   },
   "homepage": "https://github.com/SethD94/EmailApp#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "nodemon": "^1.18.5",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0"
   }
 }
