@@ -10,7 +10,7 @@ passport.serializeUser((user, done) => {
 
 passport.deserializeUser((id, done) =>{
     User.findById(id)
-        .then(user => 
+        .then(user => {
             done(null, user);
         })
 });
@@ -21,8 +21,7 @@ passport.use(
     new GoogleStrategy({
         clientID: keys.googleClientID,
         clientSecret: keys.googleClientSecret,
-        callbackURL:'/auth/google/callback',
-        proxy: true
+        callbackURL:'/auth/google/callback'
         }, (accessToken, refreshToken, profile, done) => {
              User.findOne({ googleId: profile.id})
              .then((existingUser) => {
