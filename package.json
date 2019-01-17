@@ -9,8 +9,10 @@
   },
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
   },
   "homepage": "https://github.com/SethD94/EmailApp#readme",
   "dependencies": {
+    "concurrently": "^4.1.0",
     "cookie-session": "^2.0.0-beta.3",
     "express": "^4.16.4",
     "mongoose": "^5.3.9",
